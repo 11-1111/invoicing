@@ -191,14 +191,12 @@ width: 50%;
  
   
 }
-.invoice-items{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-align-items: center;
-}
+/* .invoice-items div{
+  width:80%;
+  background-color: #3a3126;
+  height: 30px;
+}  */
 .invoice-items .headers{
-  
   border-collapse: collapse;
 width: 92%;
 margin:20px;
@@ -413,9 +411,6 @@ button:hover {
   .no-print {
     display: none;
   }
-  .invoice-details-m{
-    display: none;
-  }
 
   body, #invoice {
     -webkit-print-color-adjust: exact; /* Chrome, Safari */
@@ -442,45 +437,3 @@ button:hover {
   }
  
 }
-
-/* Large Devices - Desktops and Laptops */
-@media screen and (max-width: 1024px) {
-  .invoice-info h1 {
-    font-size: 3.5rem;
-  }
-  .client-info {
-    width: 80%;
-  }
-  .invoice-number {
-    width: 70%;
-  }
-  
-}
-
-/* Medium Devices - Tablets */
-@media screen and (min-width: 1024px) {
-  .invoice-info h1 {
-    font-size: 3rem;
-  }
-  .client-info {
-    width: 100%;
-  }
-  .invoice-number {
-    flex-direction: column;
-    width: 100%;
-    gap: 5px;
-  }
-  .invoice-final {
-    flex-direction: column;
-    align-items: flex-end;
-  
-  }
-  .invoice-total {
-    
-    
-    padding: 10px;
-    width:40%;
-  }
-  
-}
-
